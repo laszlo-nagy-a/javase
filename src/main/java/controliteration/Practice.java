@@ -30,5 +30,16 @@ public class Practice {
         }
         System.out.println("#####");
 
+        int[][] daysOfWeekToFavoriteNumbers = new int[][] {{1, 2 ,3}, {4,5,6}, {7,8,9}};
+
+        OUTER: for (int j = 0; j < daysOfWeekToFavoriteNumbers.length; j++) {
+            System.out.println("--");
+            INNTER: for (int k = 0; k < daysOfWeekToFavoriteNumbers[j].length; k++) {
+                if(daysOfWeekToFavoriteNumbers[j][k] == 5) {
+                    continue OUTER;
+                }
+                System.out.println(daysOfWeekToFavoriteNumbers[j][k]);
+            }
+        }
     }
 }
