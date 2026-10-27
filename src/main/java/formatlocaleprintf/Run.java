@@ -1,6 +1,5 @@
 package formatlocaleprintf;
 
-import javax.swing.text.DateFormatter;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
