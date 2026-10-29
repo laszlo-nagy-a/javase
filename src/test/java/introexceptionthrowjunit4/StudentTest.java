@@ -25,7 +25,7 @@ class StudentTest {
         expectedException.expectMessage("Mark must be between 1 and 5!");
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void testThirdExceptionHandling() {
         Exception ex = Assertions.assertThrows(IllegalArgumentException.class, ()-> {
             Student student = new Student();
