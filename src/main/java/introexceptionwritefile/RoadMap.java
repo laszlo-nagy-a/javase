@@ -29,7 +29,7 @@ public class RoadMap {
         return settlementList;
     }
 
-    private void writeFile(Path path, List<String> content) {
+    public void writeFile(Path path, List<String> content) {
         try {
             Files.write(path, content);
         } catch (IOException e) {
